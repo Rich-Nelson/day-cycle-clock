@@ -1,0 +1,325 @@
+EESchema Schematic File Version 4
+LIBS:DayClock Circuit-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5A7187AB
+P 6300 2875
+F 0 "A1" H 6300 1700 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 6300 1625 50  0000 C CNN
+F 2 "Modules:Arduino_Nano" H 6450 1925 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6300 1875 50  0001 C CNN
+	1    6300 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L rich_symbols:TFT-Screen-1.44-SPI-128*128 DS1
+U 1 1 5A718A49
+P 8275 2625
+F 0 "DS1" H 8753 3546 50  0000 L CNN
+F 1 "TFT-Screen-1.44-SPI-128*128" H 8753 3455 50  0000 L CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm" H 8275 2675 50  0001 C CNN
+F 3 "" H 8275 2675 50  0001 C CNN
+	1    8275 2625
+	1    0    0    -1  
+$EndComp
+Text Label 7325 1575 0    50   ~ 0
+TFT_SCK
+Wire Wire Line
+	7675 1575 7325 1575
+Text Label 7325 1675 0    50   ~ 0
+TFT_SDA
+Wire Wire Line
+	7325 1675 7675 1675
+Text Label 7325 1775 0    50   ~ 0
+TFT_A0
+Text Label 7325 1875 0    50   ~ 0
+TFT_RST
+Text Label 7325 1975 0    50   ~ 0
+TFT_CS
+Wire Wire Line
+	7325 1775 7675 1775
+Wire Wire Line
+	7325 1875 7675 1875
+Wire Wire Line
+	7325 1975 7675 1975
+$Comp
+L power:+5V #PWR01
+U 1 1 5A718B91
+P 8275 1175
+F 0 "#PWR01" H 8275 1025 50  0001 C CNN
+F 1 "+5V" H 8290 1348 50  0000 C CNN
+F 2 "" H 8275 1175 50  0001 C CNN
+F 3 "" H 8275 1175 50  0001 C CNN
+	1    8275 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5A718BD2
+P 8275 2325
+F 0 "#PWR02" H 8275 2075 50  0001 C CNN
+F 1 "GND" H 8280 2152 50  0000 C CNN
+F 2 "" H 8275 2325 50  0001 C CNN
+F 3 "" H 8275 2325 50  0001 C CNN
+	1    8275 2325
+	1    0    0    -1  
+$EndComp
+Text Label 5450 3575 0    50   ~ 0
+TFT_SCK
+Wire Wire Line
+	5800 3575 5450 3575
+Text Label 5450 3375 0    50   ~ 0
+TFT_SDA
+Wire Wire Line
+	5450 3375 5800 3375
+Text Label 5450 3275 0    50   ~ 0
+TFT_A0
+Wire Wire Line
+	5450 3075 5800 3075
+Text Label 5450 3175 0    50   ~ 0
+TFT_RST
+Wire Wire Line
+	5450 3175 5800 3175
+Text Label 5450 3075 0    50   ~ 0
+TFT_CS
+Wire Wire Line
+	5450 3275 5800 3275
+$Comp
+L power:+5V #PWR03
+U 1 1 5A718F56
+P 6200 1875
+F 0 "#PWR03" H 6200 1725 50  0001 C CNN
+F 1 "+5V" H 6215 2048 50  0000 C CNN
+F 2 "" H 6200 1875 50  0001 C CNN
+F 3 "" H 6200 1875 50  0001 C CNN
+	1    6200 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5A718F93
+P 6300 3875
+F 0 "#PWR04" H 6300 3625 50  0001 C CNN
+F 1 "GND" H 6175 3800 50  0000 C CNN
+F 2 "" H 6300 3875 50  0001 C CNN
+F 3 "" H 6300 3875 50  0001 C CNN
+	1    6300 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L rich_symbols:Tiny_RTC_DS1307 U1
+U 1 1 5A71AFB0
+P 4300 3825
+F 0 "U1" H 4300 4512 60  0000 C CNN
+F 1 "Tiny_RTC_DS1307" H 4300 4406 60  0000 C CNN
+F 2 "rich-footprints:TinyRTC-one-mounting-hole" H 4350 3925 60  0001 C CNN
+F 3 "" H 4350 3925 60  0000 C CNN
+	1    4300 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03_Male J1
+U 1 1 5A794D3A
+P 8225 3175
+F 0 "J1" H 7900 3225 50  0000 C CNN
+F 1 "Servo Conn_01x03_Male" H 7750 3100 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B03B-XH-A_03x2.50mm_Straight" H 8225 3175 50  0001 C CNN
+F 3 "~" H 8225 3175 50  0001 C CNN
+	1    8225 3175
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5A7952A6
+P 8025 3275
+F 0 "#PWR05" H 8025 3025 50  0001 C CNN
+F 1 "GND" H 8030 3102 50  0000 C CNN
+F 2 "" H 8025 3275 50  0001 C CNN
+F 3 "" H 8025 3275 50  0001 C CNN
+	1    8025 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 5A79536E
+P 7575 3175
+F 0 "#PWR06" H 7575 3025 50  0001 C CNN
+F 1 "+5V" H 7590 3348 50  0000 C CNN
+F 2 "" H 7575 3175 50  0001 C CNN
+F 3 "" H 7575 3175 50  0001 C CNN
+	1    7575 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8025 3175 7575 3175
+Text Label 7700 3075 0    50   ~ 0
+SVO_DATA
+Wire Wire Line
+	8025 3075 7700 3075
+Text Label 5450 2575 0    50   ~ 0
+SVO_DATA
+Wire Wire Line
+	5800 2575 5450 2575
+$Comp
+L Connector_Generic:Conn_01x03_Male J2
+U 1 1 5A795F85
+P 8200 4125
+F 0 "J2" H 7875 3975 50  0000 C CNN
+F 1 "LED Strip Conn_01x03_Male" H 7625 4100 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B03B-XH-A_03x2.50mm_Straight" H 8200 4125 50  0001 C CNN
+F 3 "~" H 8200 4125 50  0001 C CNN
+	1    8200 4125
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5A79654F
+P 8000 4225
+F 0 "#PWR07" H 8000 3975 50  0001 C CNN
+F 1 "GND" H 8005 4052 50  0000 C CNN
+F 2 "" H 8000 4225 50  0001 C CNN
+F 3 "" H 8000 4225 50  0001 C CNN
+	1    8000 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 5A796582
+P 8000 4025
+F 0 "#PWR08" H 8000 3875 50  0001 C CNN
+F 1 "+5V" H 8015 4198 50  0000 C CNN
+F 2 "" H 8000 4025 50  0001 C CNN
+F 3 "" H 8000 4025 50  0001 C CNN
+	1    8000 4025
+	1    0    0    -1  
+$EndComp
+Text Label 7600 4125 0    50   ~ 0
+LED_DATA
+Wire Wire Line
+	7600 4125 8000 4125
+Text Label 5450 2875 0    50   ~ 0
+LED_DATA
+Wire Wire Line
+	5450 2875 5800 2875
+Text Label 3475 3575 0    50   ~ 0
+RTC_SCL
+Text Label 3475 3675 0    50   ~ 0
+RTC_SDA
+Wire Wire Line
+	3475 3575 3800 3575
+Wire Wire Line
+	3475 3675 3800 3675
+$Comp
+L power:+5V #PWR09
+U 1 1 5A797DC1
+P 3275 3775
+F 0 "#PWR09" H 3275 3625 50  0001 C CNN
+F 1 "+5V" H 3290 3948 50  0000 C CNN
+F 2 "" H 3275 3775 50  0001 C CNN
+F 3 "" H 3275 3775 50  0001 C CNN
+	1    3275 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5A797DF4
+P 3800 3875
+F 0 "#PWR010" H 3800 3625 50  0001 C CNN
+F 1 "GND" H 3805 3702 50  0000 C CNN
+F 2 "" H 3800 3875 50  0001 C CNN
+F 3 "" H 3800 3875 50  0001 C CNN
+	1    3800 3875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3775 3275 3775
+Text Label 6900 3375 0    50   ~ 0
+RTC_SCL
+Text Label 6900 3275 0    50   ~ 0
+RTC_SDA
+Wire Wire Line
+	6800 3375 6900 3375
+Wire Wire Line
+	6900 3275 6800 3275
+$Comp
+L Connector_Generic:Conn_01x02_Male J3
+U 1 1 5A7997CD
+P 4400 1700
+F 0 "J3" H 4500 2125 50  0000 C CNN
+F 1 "5V Power Connector" H 4475 2025 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 4400 1700 50  0001 C CNN
+F 3 "~" H 4400 1700 50  0001 C CNN
+	1    4400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5A799CAA
+P 4600 1800
+F 0 "#PWR011" H 4600 1550 50  0001 C CNN
+F 1 "GND" H 4605 1627 50  0000 C CNN
+F 2 "" H 4600 1800 50  0001 C CNN
+F 3 "" H 4600 1800 50  0001 C CNN
+	1    4600 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR012
+U 1 1 5A799CDF
+P 4600 1700
+F 0 "#PWR012" H 4600 1550 50  0001 C CNN
+F 1 "+5V" H 4615 1873 50  0000 C CNN
+F 2 "" H 4600 1700 50  0001 C CNN
+F 3 "" H 4600 1700 50  0001 C CNN
+	1    4600 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04_Male J4
+U 1 1 5A79A5D3
+P 4250 2650
+F 0 "J4" H 4350 2200 50  0000 C CNN
+F 1 "Input Button Connector" H 4375 2300 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 4250 2650 50  0001 C CNN
+F 3 "~" H 4250 2650 50  0001 C CNN
+	1    4250 2650
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5A79A6E1
+P 4450 2750
+F 0 "#PWR013" H 4450 2500 50  0001 C CNN
+F 1 "GND" H 4455 2577 50  0000 C CNN
+F 2 "" H 4450 2750 50  0001 C CNN
+F 3 "" H 4450 2750 50  0001 C CNN
+	1    4450 2750
+	1    0    0    -1  
+$EndComp
+Text Label 4450 2450 0    50   ~ 0
+BTN_1
+Text Label 4450 2550 0    50   ~ 0
+BTN_2
+Text Label 4450 2650 0    50   ~ 0
+BTN_3
+Text Label 6800 3075 0    50   ~ 0
+BTN_1
+Text Label 6800 2975 0    50   ~ 0
+BTN_2
+Text Label 6800 2875 0    50   ~ 0
+BTN_3
+$EndSCHEMATC
