@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic:Conn_01x02_Male
+# Connector_Generic_Conn_01x02_Male
 #
-DEF Connector_Generic:Conn_01x02_Male J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x02_Male J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic:Conn_01x02_Male" 0 -200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02_Male" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -21,11 +21,11 @@ X Pin_2 2 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x03_Male
+# Connector_Generic_Conn_01x03_Male
 #
-DEF Connector_Generic:Conn_01x03_Male J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x03_Male J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Generic:Conn_01x03_Male" 0 -200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x03_Male" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -44,11 +44,11 @@ X Pin_3 3 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x04_Male
+# Connector_Generic_Conn_01x04_Male
 #
-DEF Connector_Generic:Conn_01x04_Male J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x04_Male J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Generic:Conn_01x04_Male" 0 -300 50 H V C CNN
+F1 "Connector_Generic_Conn_01x04_Male" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -70,11 +70,11 @@ X Pin_4 4 200 -200 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MCU_Module:Arduino_Nano_v3.x
+# MCU_Module_Arduino_Nano_v3.x
 #
-DEF MCU_Module:Arduino_Nano_v3.x A 0 40 Y Y 1 F N
+DEF MCU_Module_Arduino_Nano_v3.x A 0 40 Y Y 1 F N
 F0 "A" -200 1025 50 H V R CNN
-F1 "MCU_Module:Arduino_Nano_v3.x" -200 950 50 H V R CNN
+F1 "MCU_Module_Arduino_Nano_v3.x" -200 950 50 H V R CNN
 F2 "Module:Arduino_Nano" 150 -950 50 H I L CNN
 F3 "" 0 -1000 50 H I C CNN
 ALIAS Arduino_Nano_v2.x
@@ -116,11 +116,11 @@ X D6 9 -500 0 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# power:+5V
+# power_+5V
 #
-DEF power:+5V #PWR 0 0 Y Y 1 F P
+DEF power_+5V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+5V" 0 140 50 H V C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -131,11 +131,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_GND
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -144,11 +144,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# rich_symbols:TFT-Screen-1.44-SPI-128*128
+# rich_symbols_TFT-Screen-1.44-SPI-128*128
 #
-DEF rich_symbols:TFT-Screen-1.44-SPI-128*128 DS 0 40 Y Y 1 F N
+DEF rich_symbols_TFT-Screen-1.44-SPI-128*128 DS 0 40 Y Y 1 F N
 F0 "DS" 0 50 50 H V C CNN
-F1 "rich_symbols:TFT-Screen-1.44-SPI-128*128" 50 150 50 H V C CNN
+F1 "rich_symbols_TFT-Screen-1.44-SPI-128*128" 50 150 50 H V C CNN
 F2 "" 0 50 50 H I C CNN
 F3 "" 0 50 50 H I C CNN
 DRAW
@@ -164,11 +164,11 @@ X VCC 8 0 1450 200 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# rich_symbols:Tiny_RTC_DS1307
+# rich_symbols_Tiny_RTC_DS1307
 #
-DEF rich_symbols:Tiny_RTC_DS1307 U 0 40 Y Y 1 F N
+DEF rich_symbols_Tiny_RTC_DS1307 U 0 40 Y Y 1 F N
 F0 "U" 0 600 60 H V C CNN
-F1 "rich_symbols:Tiny_RTC_DS1307" 0 -450 60 H V C CNN
+F1 "rich_symbols_Tiny_RTC_DS1307" 0 -450 60 H V C CNN
 F2 "" 50 100 60 H V C CNN
 F3 "" 50 100 60 H V C CNN
 DRAW
