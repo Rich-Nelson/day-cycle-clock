@@ -186,17 +186,6 @@ F 3 "~" H 8200 4125 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR07
-U 1 1 5A79654F
-P 8000 4225
-F 0 "#PWR07" H 8000 3975 50  0001 C CNN
-F 1 "GND" H 8005 4052 50  0000 C CNN
-F 2 "" H 8000 4225 50  0001 C CNN
-F 3 "" H 8000 4225 50  0001 C CNN
-	1    8000 4225
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR08
 U 1 1 5A796582
 P 8000 4025
@@ -215,14 +204,14 @@ Text Label 5450 2875 0    50   ~ 0
 LED_DATA
 Wire Wire Line
 	5450 2875 5800 2875
-Text Label 3475 3575 0    50   ~ 0
-RTC_SCL
-Text Label 3475 3675 0    50   ~ 0
-RTC_SDA
+Text Label 7800 4975 0    50   ~ 0
+SCL
+Text Label 7800 5075 0    50   ~ 0
+SDA
 Wire Wire Line
-	3475 3575 3800 3575
+	7800 4975 7975 4975
 Wire Wire Line
-	3475 3675 3800 3675
+	7800 5075 7975 5075
 $Comp
 L power:+5V #PWR09
 U 1 1 5A797DC1
@@ -248,9 +237,9 @@ $EndComp
 Wire Wire Line
 	3800 3775 3275 3775
 Text Label 6900 3375 0    50   ~ 0
-RTC_SCL
+SCL
 Text Label 6900 3275 0    50   ~ 0
-RTC_SDA
+SDA
 Wire Wire Line
 	6800 3375 6900 3375
 Wire Wire Line
@@ -322,4 +311,52 @@ Text Label 6800 2975 0    50   ~ 0
 BTN_2
 Text Label 6800 2875 0    50   ~ 0
 BTN_3
+$Comp
+L Connector_Generic:Conn_01x04_Male J5
+U 1 1 5AFFD786
+P 8175 5175
+F 0 "J5" H 7800 5000 50  0000 C CNN
+F 1 "4002 LCD Screen" H 7750 5125 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 8175 5175 50  0001 C CNN
+F 3 "~" H 8175 5175 50  0001 C CNN
+	1    8175 5175
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5AFFEF10
+P 7650 5175
+F 0 "#PWR?" H 7650 5025 50  0001 C CNN
+F 1 "+5V" H 7665 5348 50  0000 C CNN
+F 2 "" H 7650 5175 50  0001 C CNN
+F 3 "" H 7650 5175 50  0001 C CNN
+	1    7650 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5AFFEF2B
+P 7650 5275
+F 0 "#PWR?" H 7650 5025 50  0001 C CNN
+F 1 "GND" H 7655 5102 50  0000 C CNN
+F 2 "" H 7650 5275 50  0001 C CNN
+F 3 "" H 7650 5275 50  0001 C CNN
+	1    7650 5275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7975 5275 7650 5275
+Wire Wire Line
+	7650 5175 7975 5175
+$Comp
+L power:GND #PWR?
+U 1 1 5B001950
+P 8000 4225
+F 0 "#PWR?" H 8000 3975 50  0001 C CNN
+F 1 "GND" H 8005 4052 50  0000 C CNN
+F 2 "" H 8000 4225 50  0001 C CNN
+F 3 "" H 8000 4225 50  0001 C CNN
+	1    8000 4225
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
