@@ -1,0 +1,209 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 7925 3700 0    50   ~ 0
+SCL
+Text Label 7925 3800 0    50   ~ 0
+SDA
+Wire Wire Line
+	7925 3700 8100 3700
+Wire Wire Line
+	7925 3800 8100 3800
+$Comp
+L power:GND #PWR013
+U 1 1 5A79A6E1
+P 2950 4050
+F 0 "#PWR013" H 2950 3800 50  0001 C CNN
+F 1 "GND" H 2955 3877 50  0000 C CNN
+F 2 "" H 2950 4050 50  0001 C CNN
+F 3 "" H 2950 4050 50  0001 C CNN
+	1    2950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04_Male J5
+U 1 1 5AFFD786
+P 8300 3900
+F 0 "J5" H 7925 3725 50  0000 C CNN
+F 1 "4002 LCD Screen" H 7875 3850 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 8300 3900 50  0001 C CNN
+F 3 "~" H 8300 3900 50  0001 C CNN
+	1    8300 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5AFFEF10
+P 7775 3900
+F 0 "#PWR0101" H 7775 3750 50  0001 C CNN
+F 1 "+5V" H 7790 4073 50  0000 C CNN
+F 2 "" H 7775 3900 50  0001 C CNN
+F 3 "" H 7775 3900 50  0001 C CNN
+	1    7775 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5AFFEF2B
+P 7775 4000
+F 0 "#PWR0102" H 7775 3750 50  0001 C CNN
+F 1 "GND" H 7780 3827 50  0000 C CNN
+F 2 "" H 7775 4000 50  0001 C CNN
+F 3 "" H 7775 4000 50  0001 C CNN
+	1    7775 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4000 7775 4000
+Wire Wire Line
+	7775 3900 8100 3900
+$Comp
+L Connector_Generic:Conn_01x05 J6
+U 1 1 5B03D90E
+P 2750 3850
+F 0 "J6" H 2670 3425 50  0000 C CNN
+F 1 "Encoder" H 2670 3516 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B05B-XH-A_1x05_P2.50mm_Vertical" H 2750 3850 50  0001 C CNN
+F 3 "~" H 2750 3850 50  0001 C CNN
+	1    2750 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5B03DD9C
+P 3400 3950
+F 0 "#PWR0103" H 3400 3800 50  0001 C CNN
+F 1 "+5V" H 3415 4123 50  0000 C CNN
+F 2 "" H 3400 3950 50  0001 C CNN
+F 3 "" H 3400 3950 50  0001 C CNN
+	1    3400 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3950 3400 3950
+Wire Notes Line
+	9200 4525 9200 3125
+Wire Notes Line
+	9200 3125 7525 3125
+Wire Notes Line
+	7525 3125 7525 4525
+Wire Notes Line
+	7525 4525 9200 4525
+Text Notes 8750 3275 0    50   ~ 0
+4002 LCD
+Wire Notes Line
+	3925 4475 3925 3075
+Wire Notes Line
+	3925 3075 2450 3075
+Wire Notes Line
+	2450 3075 2450 4475
+Wire Notes Line
+	2450 4475 3925 4475
+Text Notes 3275 3200 0    50   ~ 0
+Encoder/Button
+$Comp
+L Connector_Specialized:RJ45 J?
+U 1 1 5B136A4D
+P 5550 3675
+F 0 "J?" V 5673 4155 50  0000 L CNN
+F 1 "RJ45" V 5582 4155 50  0000 L CNN
+F 2 "" H 5550 3675 50  0001 C CNN
+F 3 "" H 5550 3675 50  0001 C CNN
+	1    5550 3675
+	0    -1   -1   0   
+$EndComp
+Text Label 6000 3725 0    50   ~ 0
+SCL
+Text Label 6000 3825 0    50   ~ 0
+SDA
+$Comp
+L power:+5V #PWR?
+U 1 1 5B136F22
+P 6275 3925
+F 0 "#PWR?" H 6275 3775 50  0001 C CNN
+F 1 "+5V" H 6290 4098 50  0000 C CNN
+F 2 "" H 6275 3925 50  0001 C CNN
+F 3 "" H 6275 3925 50  0001 C CNN
+	1    6275 3925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3925 6275 3925
+$Comp
+L power:GND #PWR?
+U 1 1 5B1370AF
+P 6275 4025
+F 0 "#PWR?" H 6275 3775 50  0001 C CNN
+F 1 "GND" H 6280 3852 50  0000 C CNN
+F 2 "" H 6275 4025 50  0001 C CNN
+F 3 "" H 6275 4025 50  0001 C CNN
+	1    6275 4025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4025 6275 4025
+Text Label 6000 3625 0    50   ~ 0
+CLK
+Text Label 6000 3525 0    50   ~ 0
+DT
+Text Label 6000 3425 0    50   ~ 0
+SW
+Text Label 6000 3325 0    50   ~ 0
+BTN1
+Text Label 2950 3650 0    50   ~ 0
+CLK
+Text Label 2950 3750 0    50   ~ 0
+DT
+Text Label 2950 3850 0    50   ~ 0
+SW
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5B13865A
+P 3150 2700
+F 0 "SW1" H 3150 2985 50  0000 C CNN
+F 1 "SW_Push" H 3150 2894 50  0000 C CNN
+F 2 "" H 3150 2900 50  0001 C CNN
+F 3 "" H 3150 2900 50  0001 C CNN
+	1    3150 2700
+	1    0    0    -1  
+$EndComp
+Text Label 3550 2700 0    50   ~ 0
+BTN1
+$Comp
+L power:+5V #PWR?
+U 1 1 5B138705
+P 2725 2700
+F 0 "#PWR?" H 2725 2550 50  0001 C CNN
+F 1 "+5V" H 2740 2873 50  0000 C CNN
+F 2 "" H 2725 2700 50  0001 C CNN
+F 3 "" H 2725 2700 50  0001 C CNN
+	1    2725 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2700 2725 2700
+Wire Wire Line
+	3350 2700 3550 2700
+Text Notes 3500 2200 0    50   ~ 0
+Button 1
+Wire Notes Line
+	3925 2950 3925 2000
+Wire Notes Line
+	3925 2000 2450 2000
+Wire Notes Line
+	2450 2000 2450 2950
+Wire Notes Line
+	2450 2950 3925 2950
+$EndSCHEMATC
