@@ -485,9 +485,6 @@ Wire Wire Line
 Wire Wire Line
 	13200 7050 13200 7350
 Wire Wire Line
-	13200 7050 13075 7050
-Connection ~ 13200 7050
-Wire Wire Line
 	13500 7350 13575 7350
 Wire Wire Line
 	13575 7350 13575 7250
@@ -803,11 +800,11 @@ Text Label 10975 4600 2    50   ~ 0
 D2
 Text Label 10900 6250 2    50   ~ 0
 D3
-Text Label 13100 8625 2    50   ~ 0
+Text Label 13100 2775 2    50   ~ 0
 D4
-Text Label 13100 7850 2    50   ~ 0
+Text Label 13100 2000 2    50   ~ 0
 D5
-Text Label 13075 7050 2    50   ~ 0
+Text Label 13075 1200 2    50   ~ 0
 D6
 Text Label 13100 5725 2    50   ~ 0
 D7
@@ -815,7 +812,7 @@ Text Label 13100 4950 2    50   ~ 0
 D8
 Text Label 13075 4150 2    50   ~ 0
 D9
-Text Label 13100 2775 2    50   ~ 0
+Text Label 13100 8625 2    50   ~ 0
 D10
 Text Label 10775 1500 2    50   ~ 0
 D24
@@ -973,9 +970,9 @@ Text Label 8200 2750 0    50   ~ 0
 D11
 Text Label 8200 2850 0    50   ~ 0
 D12
-Text Label 13075 1200 2    50   ~ 0
+Text Label 13075 7050 2    50   ~ 0
 D12
-Text Label 13100 2000 2    50   ~ 0
+Text Label 13100 7850 2    50   ~ 0
 D11
 $Comp
 L Device:R R10
@@ -1453,4 +1450,7 @@ Text Label 9700 8825 2    50   ~ 0
 D36
 Text Label 8200 4450 0    50   ~ 0
 D36
+Wire Wire Line
+	13075 7050 13200 7050
+Connection ~ 13200 7050
 $EndSCHEMATC

@@ -667,7 +667,7 @@ U 1 1 5B0E5F76
 P 6900 4000
 F 0 "U1" H 6900 1620 60  0000 C CNN
 F 1 "Arduino_Mega2560_Shield" H 6900 1514 60  0000 C CNN
-F 2 "rich-footprints:Arduino_Mega2560_Shield_No_Serial_Header_les_Analog" H 7600 6750 60  0001 C CNN
+F 2 "rich-footprints:Arduino_Mega2560_Shield_No_Serial_Header" H 7600 6750 60  0001 C CNN
 F 3 "https://store.arduino.cc/arduino-mega-2560-rev3" H 7600 6750 60  0001 C CNN
 	1    6900 4000
 	1    0    0    -1  
