@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L rich_symbols:Tiny_RTC_DS1307 U1
+L rich_symbols:Tiny_RTC_DS1307 U3
 U 1 1 5A71AFB0
 P 2350 3625
-F 0 "U1" H 2350 4312 60  0000 C CNN
+F 0 "U3" H 2350 4312 60  0000 C CNN
 F 1 "Tiny_RTC_DS1307" H 2350 4206 60  0000 C CNN
 F 2 "rich-footprints:TinyRTC-one-mounting-hole" H 2400 3725 60  0001 C CNN
 F 3 "" H 2400 3725 60  0000 C CNN
@@ -50,10 +50,10 @@ $EndComp
 Wire Wire Line
 	1850 3575 1500 3575
 $Comp
-L rich_symbols:RGB_LED_Strip_Connector J7
+L rich_symbols:RGB_LED_Strip_Connector J8
 U 1 1 5B09E233
 P 14825 1750
-F 0 "J7" H 15225 1600 50  0000 L CNN
+F 0 "J8" H 15225 1600 50  0000 L CNN
 F 1 "RGB_LED_Strip_Connector" H 14650 1450 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 14825 1750 50  0001 C CNN
 F 3 "" H 14825 1750 50  0001 C CNN
@@ -239,10 +239,10 @@ Wire Notes Line
 Text Notes 15225 900  0    50   ~ 0
 LED Strip 1
 $Comp
-L rich_symbols:RGB_LED_Strip_Connector J8
+L rich_symbols:RGB_LED_Strip_Connector J9
 U 1 1 5B0C5230
 P 14825 4700
-F 0 "J8" H 15225 4550 50  0000 L CNN
+F 0 "J9" H 15225 4550 50  0000 L CNN
 F 1 "RGB_LED_Strip_Connector" H 14650 4400 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 14825 4700 50  0001 C CNN
 F 3 "" H 14825 4700 50  0001 C CNN
@@ -424,10 +424,10 @@ Wire Notes Line
 Text Notes 15225 3850 0    50   ~ 0
 LED Strip 2
 $Comp
-L rich_symbols:RGB_LED_Strip_Connector J9
+L rich_symbols:RGB_LED_Strip_Connector J10
 U 1 1 5B0C699D
 P 14825 7600
-F 0 "J9" H 15225 7450 50  0000 L CNN
+F 0 "J10" H 15225 7450 50  0000 L CNN
 F 1 "RGB_LED_Strip_Connector" H 14650 7300 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 14825 7600 50  0001 C CNN
 F 3 "" H 14825 7600 50  0001 C CNN
@@ -603,7 +603,7 @@ U 1 1 5B0E4FF2
 P 10975 1800
 F 0 "J3" H 11025 2317 50  0000 C CNN
 F 1 "Conn_02x08_Odd_Even" H 11025 2226 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 10975 1800 50  0001 C CNN
+F 2 "rich-footprints:3M_Header_2x8_Keyed" H 10975 1800 50  0001 C CNN
 F 3 "~" H 10975 1800 50  0001 C CNN
 	1    10975 1800
 	1    0    0    -1  
@@ -662,12 +662,12 @@ Wire Notes Line
 Wire Notes Line
 	10125 3375 12275 3375
 $Comp
-L arduino:Arduino_Mega2560_Shield XA1
+L arduino:Arduino_Mega2560_Shield U1
 U 1 1 5B0E5F76
 P 6900 4000
-F 0 "XA1" H 6900 1620 60  0000 C CNN
+F 0 "U1" H 6900 1620 60  0000 C CNN
 F 1 "Arduino_Mega2560_Shield" H 6900 1514 60  0000 C CNN
-F 2 "Arduino:Arduino_Mega2560_Shield" H 7600 6750 60  0001 C CNN
+F 2 "rich-footprints:Arduino_Mega2560_Shield_No_Serial_Header_les_Analog" H 7600 6750 60  0001 C CNN
 F 3 "https://store.arduino.cc/arduino-mega-2560-rev3" H 7600 6750 60  0001 C CNN
 	1    6900 4000
 	1    0    0    -1  
@@ -677,7 +677,7 @@ L Connector_Generic:Conn_01x02 J4
 U 1 1 5B0E97EB
 P 11150 2850
 F 0 "J4" H 11230 2842 50  0000 L CNN
-F 1 "Conn_01x02" H 11230 2751 50  0000 L CNN
+F 1 "LED Matrix Power" H 11230 2751 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 11150 2850 50  0001 C CNN
 F 3 "~" H 11150 2850 50  0001 C CNN
 	1    11150 2850
@@ -803,19 +803,19 @@ Text Label 10975 4600 2    50   ~ 0
 D2
 Text Label 10900 6250 2    50   ~ 0
 D3
-Text Label 13075 1200 2    50   ~ 0
+Text Label 13100 8625 2    50   ~ 0
 D4
-Text Label 13100 2000 2    50   ~ 0
+Text Label 13100 7850 2    50   ~ 0
 D5
-Text Label 13100 2775 2    50   ~ 0
+Text Label 13075 7050 2    50   ~ 0
 D6
-Text Label 13075 4150 2    50   ~ 0
+Text Label 13100 5725 2    50   ~ 0
 D7
 Text Label 13100 4950 2    50   ~ 0
 D8
-Text Label 13100 5725 2    50   ~ 0
+Text Label 13075 4150 2    50   ~ 0
 D9
-Text Label 13075 7050 2    50   ~ 0
+Text Label 13100 2775 2    50   ~ 0
 D10
 Text Label 10775 1500 2    50   ~ 0
 D24
@@ -855,7 +855,7 @@ U 1 1 5B13490E
 P 2500 1625
 F 0 "J1" H 2579 1617 50  0000 L CNN
 F 1 "molex 15-24-4441" H 2579 1526 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal" H 2500 1625 50  0001 C CNN
+F 2 "rich-footprints:Molex_15-24-4449_ATX_Power_Supply_Connector" H 2500 1625 50  0001 C CNN
 F 3 "~" H 2500 1625 50  0001 C CNN
 	1    2500 1625
 	1    0    0    -1  
@@ -929,7 +929,7 @@ L Connector_Generic:Conn_01x03 J5
 U 1 1 5B10F747
 P 11350 4125
 F 0 "J5" H 11430 4167 50  0000 L CNN
-F 1 "Conn_01x03" H 11430 4076 50  0000 L CNN
+F 1 "Lower Limit Switch" H 11430 4076 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 11350 4125 50  0001 C CNN
 F 3 "~" H 11350 4125 50  0001 C CNN
 	1    11350 4125
@@ -973,10 +973,10 @@ Text Label 8200 2750 0    50   ~ 0
 D11
 Text Label 8200 2850 0    50   ~ 0
 D12
-Text Label 13100 8625 2    50   ~ 0
-D13
-Text Label 13100 7850 2    50   ~ 0
+Text Label 13075 1200 2    50   ~ 0
 D12
+Text Label 13100 2000 2    50   ~ 0
+D11
 $Comp
 L Device:R R10
 U 1 1 5B12BF58
@@ -1017,14 +1017,14 @@ F 3 "" H 11150 4975 50  0001 C CNN
 	1    11150 4975
 	1    0    0    -1  
 $EndComp
-Text Notes 11525 3675 0    50   ~ 0
+Text Notes 11475 5475 0    50   ~ 0
 Upper Limit Sensor
 $Comp
-L Connector_Generic:Conn_01x03 J5
+L Connector_Generic:Conn_01x03 J6
 U 1 1 5B14EA09
 P 11275 5775
-F 0 "J5" H 11355 5817 50  0000 L CNN
-F 1 "Conn_01x03" H 11355 5726 50  0000 L CNN
+F 0 "J6" H 11355 5817 50  0000 L CNN
+F 1 "Upper Limit Switch" H 11355 5726 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 11275 5775 50  0001 C CNN
 F 3 "~" H 11275 5775 50  0001 C CNN
 	1    11275 5775
@@ -1096,7 +1096,7 @@ F 3 "" H 11075 6625 50  0001 C CNN
 	1    11075 6625
 	1    0    0    -1  
 $EndComp
-Text Notes 11550 5450 0    50   ~ 0
+Text Notes 11500 3725 0    50   ~ 0
 Lower Limit Sensor
 $Comp
 L rich_symbols:DRV8825_module U2
@@ -1104,18 +1104,18 @@ U 1 1 5B16151E
 P 10350 8675
 F 0 "U2" H 10975 7775 50  0000 C CNN
 F 1 "DRV8825_module" H 10975 7925 50  0000 C CNN
-F 2 "" H 10100 8675 50  0001 C CNN
+F 2 "rich-footprints:DRV8825_board" H 10100 8675 50  0001 C CNN
 F 3 "" H 10100 8675 50  0001 C CNN
 	1    10350 8675
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x06 J6
+L Connector_Generic:Conn_01x06 J7
 U 1 1 5B169A57
 P 11500 8575
-F 0 "J6" H 11580 8567 50  0000 L CNN
+F 0 "J7" H 11580 8567 50  0000 L CNN
 F 1 "Stepper Motor" H 11580 8476 50  0000 L CNN
-F 2 "" H 11500 8575 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B06B-XH-A_1x06_P2.50mm_Vertical" H 11500 8575 50  0001 C CNN
 F 3 "~" H 11500 8575 50  0001 C CNN
 	1    11500 8575
 	1    0    0    -1  
@@ -1164,7 +1164,7 @@ U 1 1 5B17B6EF
 P 10825 7850
 F 0 "C1" H 10916 7896 50  0000 L CNN
 F 1 "100uF" H 10916 7805 50  0000 L CNN
-F 2 "" H 10825 7850 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 10825 7850 50  0001 C CNN
 F 3 "~" H 10825 7850 50  0001 C CNN
 	1    10825 7850
 	1    0    0    -1  
@@ -1201,12 +1201,12 @@ Connection ~ 10825 7700
 $Comp
 L power:+5V #PWR0136
 U 1 1 5B180805
-P 9250 8825
-F 0 "#PWR0136" H 9250 8675 50  0001 C CNN
-F 1 "+5V" H 9265 8998 50  0000 C CNN
-F 2 "" H 9250 8825 50  0001 C CNN
-F 3 "" H 9250 8825 50  0001 C CNN
-	1    9250 8825
+P 9475 8725
+F 0 "#PWR0136" H 9475 8575 50  0001 C CNN
+F 1 "+5V" H 9490 8898 50  0000 C CNN
+F 2 "" H 9475 8725 50  0001 C CNN
+F 3 "" H 9475 8725 50  0001 C CNN
+	1    9475 8725
 	1    0    0    -1  
 $EndComp
 Text Label 9275 8925 2    50   ~ 0
@@ -1223,17 +1223,13 @@ U 1 1 5B19A6DB
 P 7825 8625
 F 0 "SW1" H 7825 9092 50  0000 C CNN
 F 1 "SW_DIP_x03" H 7825 9001 50  0000 C CNN
-F 2 "" H 7825 8625 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx03_Slide_6.7x9.18mm_W7.62mm_P2.54mm_LowProfile" H 7825 8625 50  0001 C CNN
 F 3 "" H 7825 8625 50  0001 C CNN
 	1    7825 8625
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9700 8825 9475 8825
-Wire Wire Line
 	9700 8725 9475 8725
-Wire Wire Line
-	9475 8725 9475 8825
 $Comp
 L power:+5V #PWR0137
 U 1 1 5B1BE31D
@@ -1257,32 +1253,29 @@ Wire Wire Line
 Wire Wire Line
 	7375 8625 7375 8525
 Connection ~ 7375 8525
-Wire Wire Line
-	9475 8825 9250 8825
-Connection ~ 9475 8825
 $Comp
 L Device:R R16
 U 1 1 5B212CFE
-P 8875 8575
-F 0 "R16" V 8800 8575 50  0000 C CNN
-F 1 "10k" V 8950 8575 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.50mm_HandSolder" V 8805 8575 50  0001 C CNN
-F 3 "~" H 8875 8575 50  0001 C CNN
-	1    8875 8575
+P 7400 9275
+F 0 "R16" V 7325 9275 50  0000 C CNN
+F 1 "10k" V 7475 9275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.50mm_HandSolder" V 7330 9275 50  0001 C CNN
+F 3 "~" H 7400 9275 50  0001 C CNN
+	1    7400 9275
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0138
 U 1 1 5B212D05
-P 8875 8725
-F 0 "#PWR0138" H 8875 8475 50  0001 C CNN
-F 1 "GND" H 8880 8552 50  0000 C CNN
-F 2 "" H 8875 8725 50  0001 C CNN
-F 3 "" H 8875 8725 50  0001 C CNN
-	1    8875 8725
+P 7400 9425
+F 0 "#PWR0138" H 7400 9175 50  0001 C CNN
+F 1 "GND" H 7405 9252 50  0000 C CNN
+F 2 "" H 7400 9425 50  0001 C CNN
+F 3 "" H 7400 9425 50  0001 C CNN
+	1    7400 9425
 	1    0    0    -1  
 $EndComp
-Text Label 9000 8425 0    50   ~ 0
+Text Label 8125 8425 0    50   ~ 0
 M0
 Text Label 9700 8425 2    50   ~ 0
 M0
@@ -1290,67 +1283,54 @@ Text Label 9700 8525 2    50   ~ 0
 M1
 Text Label 9700 8625 2    50   ~ 0
 M2
-Text Label 8625 8525 0    50   ~ 0
+Text Label 8125 8525 0    50   ~ 0
 M1
 $Comp
 L power:GND #PWR0139
 U 1 1 5B20D121
-P 8500 8825
-F 0 "#PWR0139" H 8500 8575 50  0001 C CNN
-F 1 "GND" H 8505 8652 50  0000 C CNN
-F 2 "" H 8500 8825 50  0001 C CNN
-F 3 "" H 8500 8825 50  0001 C CNN
-	1    8500 8825
+P 7800 9400
+F 0 "#PWR0139" H 7800 9150 50  0001 C CNN
+F 1 "GND" H 7805 9227 50  0000 C CNN
+F 2 "" H 7800 9400 50  0001 C CNN
+F 3 "" H 7800 9400 50  0001 C CNN
+	1    7800 9400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8125 8525 8500 8525
-Wire Wire Line
-	8500 8525 8625 8525
-Connection ~ 8500 8525
 $Comp
 L Device:R R17
 U 1 1 5B20D11A
-P 8500 8675
-F 0 "R17" V 8425 8675 50  0000 C CNN
-F 1 "10k" V 8575 8675 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.50mm_HandSolder" V 8430 8675 50  0001 C CNN
-F 3 "~" H 8500 8675 50  0001 C CNN
-	1    8500 8675
+P 7800 9250
+F 0 "R17" V 7725 9250 50  0000 C CNN
+F 1 "10k" V 7875 9250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.50mm_HandSolder" V 7730 9250 50  0001 C CNN
+F 3 "~" H 7800 9250 50  0001 C CNN
+	1    7800 9250
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	8125 8625 8250 8625
-Text Label 8250 8625 0    50   ~ 0
+Text Label 8125 9100 2    50   ~ 0
 M2
 $Comp
 L power:GND #PWR0140
 U 1 1 5B1F6902
-P 8125 8925
-F 0 "#PWR0140" H 8125 8675 50  0001 C CNN
-F 1 "GND" H 8130 8752 50  0000 C CNN
-F 2 "" H 8125 8925 50  0001 C CNN
-F 3 "" H 8125 8925 50  0001 C CNN
-	1    8125 8925
+P 8225 9400
+F 0 "#PWR0140" H 8225 9150 50  0001 C CNN
+F 1 "GND" H 8230 9227 50  0000 C CNN
+F 2 "" H 8225 9400 50  0001 C CNN
+F 3 "" H 8225 9400 50  0001 C CNN
+	1    8225 9400
 	1    0    0    -1  
 $EndComp
-Connection ~ 8125 8625
 $Comp
 L Device:R R18
 U 1 1 5B0C69E9
-P 8125 8775
-F 0 "R18" V 8050 8775 50  0000 C CNN
-F 1 "10k" V 8200 8775 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.50mm_HandSolder" V 8055 8775 50  0001 C CNN
-F 3 "~" H 8125 8775 50  0001 C CNN
-	1    8125 8775
+P 8225 9250
+F 0 "R18" V 8150 9250 50  0000 C CNN
+F 1 "10k" V 8300 9250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.50mm_HandSolder" V 8155 9250 50  0001 C CNN
+F 3 "~" H 8225 9250 50  0001 C CNN
+	1    8225 9250
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	8125 8425 8875 8425
-Connection ~ 8875 8425
-Wire Wire Line
-	8875 8425 9000 8425
 Wire Notes Line
 	12325 7325 12325 9825
 Wire Notes Line
@@ -1395,7 +1375,7 @@ U 1 1 5B12B8C7
 P 2100 5800
 F 0 "J2" V 2223 6280 50  0000 L CNN
 F 1 "RJ45" V 2132 6280 50  0000 L CNN
-F 2 "" H 2100 5800 50  0001 C CNN
+F 2 "Connector_RJ:RJ45_Amphenol_RJHSE538X" H 2100 5800 50  0001 C CNN
 F 3 "" H 2100 5800 50  0001 C CNN
 	1    2100 5800
 	0    -1   -1   0   
@@ -1446,4 +1426,31 @@ Wire Notes Line
 	3375 4675 1050 4675
 Text Notes 2500 4800 0    50   ~ 0
 RJ45 to Control Box
+$Comp
+L Device:R R9
+U 1 1 5B1D3C6F
+P 13375 8925
+F 0 "R9" V 13300 8925 50  0000 C CNN
+F 1 "10k" V 13450 8925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.50mm_HandSolder" V 13305 8925 50  0001 C CNN
+F 3 "~" H 13375 8925 50  0001 C CNN
+	1    13375 8925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8125 9100 8225 9100
+Text Label 8125 8625 0    50   ~ 0
+M2
+Text Label 7725 9100 2    50   ~ 0
+M1
+Wire Wire Line
+	7725 9100 7800 9100
+Text Label 7300 9125 2    50   ~ 0
+M0
+Wire Wire Line
+	7300 9125 7400 9125
+Text Label 9700 8825 2    50   ~ 0
+D36
+Text Label 8200 4450 0    50   ~ 0
+D36
 $EndSCHEMATC
