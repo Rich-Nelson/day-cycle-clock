@@ -1,0 +1,33 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
+1,Polarised capacitor,CP1_Small,C1,100uF,CP_Radial_D6.3mm_P2.50mm,1,
+2,"Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x10,J11,Breakout Pins,PinHeader_1x10_P2.54mm_Vertical,1,
+3,"Generic connector, double row, 02x08, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_02x08_Odd_Even,J3,Conn_02x08_Odd_Even,3M_Header_2x8_Keyed,1,
+4,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x02,J4,LED Matrix Power,TerminalBlock_Altech_AK300-2_P5.00mm,1,
+5,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03,J5,Lower Limit Switch,JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical,1,
+6,,RGB_LED_Strip_Connector,J8 J9 J10,RGB_LED_Strip_Connector,JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical,3,
+7,RJ45 connector with shield,RJ45,J2,RJ45,RJ45_Amphenol_RJHSE538X,1,
+8,"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x06,J7,Stepper Motor,JST_XH_B06B-XH-A_1x06_P2.50mm_Vertical,1,
+9,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03,J6,Upper Limit Switch,JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical,1,
+10,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x04,J1,molex 15-24-4441,Molex_15-24-4449_ATX_Power_Supply_Connector,1,
+11,"0.35A Id, 240V Vds, N-Channel MOSFET, SOT-223",BSP129,Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9,N-MOSFET,TO-251_IPAK_Vertical,9,https://www.infineon.com/dgdl/Infineon-BSP129-DS-v01_42-en.pdf?fileId=db3a30433c1a8752013c1fc296d2395f
+12,Resistor,R,R1 R2 R3 R4 R5 R6 R7 R8 R9 R10 R12 R14 R15 R16 R17 R18,10k,R_0805_2012Metric_Pad1.15x1.50mm_HandSolder,16,
+13,Resistor,R,R11 R13,6.8k,R_0805_2012Metric_Pad1.15x1.50mm_HandSolder,2,
+14,"3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol",SW_DIP_x03,SW1,SW_DIP_x03,SW_DIP_SPSTx03_Slide_6.7x9.18mm_W7.62mm_P2.54mm_LowProfile,1,
+15,Shield for Arduino Mega 2560,Arduino_Mega2560_Shield,U1,Arduino_Mega2560_Shield,Arduino_Mega2560_Shield_No_Serial_Header,1,https://store.arduino.cc/arduino-mega-2560-rev3
+16,,DRV8825_module,U2,DRV8825_module,DRV8825_board,1,
+17,,Tiny_RTC_DS1307,U3,Tiny_RTC_DS1307,TinyRTC-coin-side-up,1,
+
+
+
+
+
+Component Groups:,17
+Component Count:,43
+Fitted Components:,43
+Number of PCBs:,1
+Total components:,43
+Schematic Version:,
+Schematic Date:,
+BoM Date:,6/3/2018 11:47:07 PM
+Schematic Source:,C:\Users\Rich\Dropbox\Projects\Skyline Shadowbox Day Cycle\day-cycle-clock\PCB\DayClock Circuit\DayClock Circuit.sch
+KiCad Version:,Eeschema (5.0.0-rc2-dev-352-g017154715)
